@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="media_query.css">
+    <link rel="icon" href="img/icons/favico.ico" type="image/x-icon">
+
+
+    <script src="script.js"></script>
+</head>
+
+<body onload="renderPage()">
+    <nav class="navbar box_shadow_bottom">
+        <div class="website_icon">
+            <img src="img/icons/website_icon.png" alt="icon">
+            <span>Lieferando</span>
+        </div>
+
+        <div>
+            <p><b>Speisekarte</b></p>
+        </div>
+
+        <div class="navbar_menu">
+            <img src="img/icons/flag.png" alt="flag">
+            <img src="img/icons/menu.png" alt="menu">
+        </div>
+    </nav>
+
+    <main id="main" class="display_flex">
+        <section class="main_section_width">
+
+            <picture class="banner">
+                <img src="img/sushi-banner.jpg" alt="banner">
+            </picture>
+            <section>
+                <section>
+                    <div class="section">
+                        <div class="space_between">
+                            <div>
+                                <h1>Sushi Paradies</h1>
+                            </div>
+                            <div class="restaurant_like">
+                                <img src="img/icons/info.png" alt="information">
+                                <img onclick="toggleHeart()" id="heart" src="img/icons/heart.png" alt="heart">
+                                <img onclick="toggleHeart()" id="filledHeart" src="img/icons/filled_heart.png" class="red_heart display_none" alt="heart">
+                            </div>
+                        </div>
+
+                        <div class="restaurant_advertising">
+                            <div class="restaurant_note">
+                                <div class="align_center">
+                                    <img src="img/icons/full_star.png" alt="">
+                                    <img src="img/icons/full_star.png" alt="">
+                                    <img src="img/icons/full_star.png" alt="">
+                                    <img src="img/icons/full_star.png" alt="">
+                                    <img src="img/icons/half_star.png" alt="">
+                                </div>
+                                <a href="#" class="align_center">12345 Bewertungen</a>
+                            </div>
+                            <div>
+                                <ul class="service_information">
+                                    <li><img src="img/icons/time.png" alt=""><span>Lieferung ab 17:00</span></li>
+                                    <li><img src="img/icons/bike.png" alt=""><span>4,00€</span></li>
+                                    <li><img src="img/icons/basket.png" alt=""><span>Min. 40,00€</span></li>
+                                    <li><img src="img/icons/engineering.png" alt=""><span>Kostenlose Lieferung ab
+                                            60,00€</span></li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                Willkommen beim Sushi-Paradies! Wir bieten frischen und köstliche
+                                Sushi-Kreationen an, die von unseren talentierten Sushi-Köchen mit den feinsten und
+                                frischesten Zutaten zubereitet werden.
+                                Bestellen Sie jetzt und genießen Sie das Beste der japanischen Küche bequem von zu Hause
+                                aus.
+                            </div>
+                            <div>
+                                <h2>Angebote</h2>
+                                <div class="promotion">20% auf alles mit dem Code DA-AKAD</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <nav class="sticky">
+                    <ul id="nav_links" class="jump_to_menu"></ul>
+                </nav>
+
+                <section id="menuSection" class="section"></section>
+
+            </section>
+        </section>
+
+        <aside class="basket box_shadow_left">
+            <div>
+                <h2>Warenkorb</h2>
+            </div>
+
+            <div id="basket" class="basket text_align_basket">
+                <img width="30px" src="img/icons/basket.png" alt="basket">
+                <div>
+                    <h2>Fülle deinen Warenkorb</h2>
+                    <span>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div id="mobileBasket" class="mobile_basket display_none"></div>
+
+    <div id="mobile_shopping_cart_button_ctn" class="mobile_shopping_cart_button_ctn display_none"></div>
+
+</body>
+
+</html>

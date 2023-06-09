@@ -1,0 +1,127 @@
+@media(max-width: 1024px) {
+    .basket {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .restaurant_advertising {
+        font-size: 13px;
+    }
+
+    .service_information li{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 680px) {
+    .service_information{
+        overflow: hidden;
+        display: block;
+    }
+
+    .service_information li {
+        float: left;
+        margin-right: 8px;
+    }
+
+     .service_information li:nth-child(4){
+        clear: left;
+    }
+    
+}
+
+@media(max-width: 550px) {
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .menu h3 {
+        font-size: 1rem;
+    }
+
+    .menu span {
+        font-size: 13px;
+    }
+ 
+    .menu h4{
+        font-size: 1rem;
+    }
+
+    .sticky ul {
+        padding-left: 100px
+     }
+
+     .jump_to_menu li:nth-child(2) a{
+        width: 101px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+     }
+}
+
+@media(max-width: 500px) {
+    .navbar p {
+        display: none;
+    }
+
+    .sticky ul {
+        padding-left: 75px
+     }
+
+}
+
+@media(max-width: 420px) {
+    .sticky ul {
+       padding-left: 40px
+    }
+}
+
+@media(max-width: 385px) {
+    .sticky ul {
+       padding-left: 20px
+    }
+}
+
+
+@media(max-width: 365px) {
+    .sticky ul {
+       padding-left: 9px
+    }
+
+    .jump_to_menu li:nth-child(2) a{
+        width: 72px;
+     }
+
+     .promotion{
+        width: auto;
+     }
+}
+
+@media(max-width: 325px) {
+    .jump_to_menu a {
+       padding: 6px 7px;
+    }
+
+    .navbar{
+        padding: 36px 18px;
+    }
+}
+
+@media(min-width: 1025px){
+    .mobile_shopping_cart_button_ctn{
+        display: none;
+    }
+
+    #main{
+        display: flex;
+    }
+
+    .mobile_basket{
+        display: none;
+    }
+}
+
+
+
+
